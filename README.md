@@ -11,6 +11,27 @@ As far as I know, `alt` should be compatible any other git-related tools - they 
 ### Warning ⚠️
 This is a work in progress. Use at your own risk.
 
+## Building
+### To install automatically:
+```
+cargo install --git https://github.com/YSCohen/alt-cli
+```
+Or
+```
+git clone https://github.com/YSCohen/alt-cli
+cd alt-cli
+cargo install --path .
+```
+And make sure `$HOME/.cargo/bin` is in your `$PATH`.
+
+### Alternatively, you can
+```
+git clone https://github.com/YSCohen/alt-cli
+cd alt-cli
+cargo build --release
+```
+and copy the binary `target/release/alt` to any dir on your path.
+
 ## Usage
 ```
 $ alt --help
